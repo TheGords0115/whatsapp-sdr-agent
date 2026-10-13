@@ -1,0 +1,39 @@
+{
+  "name": "whatsapp-sdr-agent",
+  "version": "1.0.0",
+  "description": "Agente SDR com IA para WhatsApp: qualifica leads, agenda visitas e passa a conversa para um humano. Projeto de portfólio com empresa fictícia.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "chat": "tsx src/cli.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "whatsapp",
+    "sdr",
+    "ai-agent",
+    "claude",
+    "anthropic",
+    "typescript",
+    "fastify"
+  ],
+  "author": "Gustavo Camargo",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "fastify": "^5.12.7",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
